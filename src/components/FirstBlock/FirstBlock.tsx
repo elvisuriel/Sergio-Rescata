@@ -42,12 +42,12 @@ export function FirstBlock() {
             </div>
           </Reveal>
         </div>
-        <MotionTransition className="flex items-center justify-center">
+        <MotionTransition className="my-20 flex items-center justify-center">
           <Image
-            src="/assets/cards-block.PNG"
+            src="/assets/git.gif"
             alt="Card"
-            width={450}
-            height={450}
+            width={350}
+            height={350}
             className="h-auto w-72 md:w-full"
           />
         </MotionTransition>

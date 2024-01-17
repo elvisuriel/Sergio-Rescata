@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         primary: "#fff",
         primaryDark: "rgba(255,255,255, 0.7);",
-        secondary: "#6DE4E8",
+        secondary: "#336BFF",
       },
       backgroundImage: {
         radialBlack:
