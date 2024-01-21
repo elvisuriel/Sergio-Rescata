@@ -7,10 +7,15 @@ html {
 }
 
 body {
-  background-color: #b3f4fde2;
+  background-color: #ffffff;
   color: #030303;
 }
-
+.git-background {
+  background-image: url('/assets/git-1.gif');
+  background-size: cover;  /* O ajusta según tus preferencias */
+  background-position: center;
+  /* Otras propiedades de fondo según tus necesidades */
+}
 ::selection {
   background: #eff2f3;
 }

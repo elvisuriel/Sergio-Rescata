@@ -3,6 +3,7 @@ import { ChooseYourCards } from "@/components/ChooseYourCards";
 import { ControlBilling } from "@/components/ControlBilling";
 import { CounterData } from "@/components/CounterData";
 import { FirstBlock } from "@/components/FirstBlock";
+import { FirstBlockPort } from "@/components/FirstBlockPort";
 import { Footer } from "@/components/Footer/";
 import { Header } from "@/components/Header";
 import { PaymentsMethods } from "@/components/PaymentsMethods";
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <>
       <Header />
+      <FirstBlockPort />
       <FirstBlock />
       <CounterData />
       <BestBusiness />
@@ -21,5 +23,5 @@ export default function Home() {
       <PaymentsMethods />
       <Footer />
     </>
-  )
+  );
 }

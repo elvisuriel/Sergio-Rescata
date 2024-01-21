@@ -19,4 +19,9 @@ export const dataHeader = [
     name: "Servicios",
     idLink: "#servicios",
   },
+  {
+    id: 5,
+    name: "Galeria",
+    idLink: "#galeria",
+  },
 ];
