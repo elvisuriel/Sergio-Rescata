@@ -36,7 +36,7 @@ export function BestBusiness() {
                 href="#clients"
                 className="px-4 py-3 rounded-md bg-blueRadial"
               >
-                Únete Ahora
+                Realizar Aporte
               </Link>
             </div>
           </Reveal>
