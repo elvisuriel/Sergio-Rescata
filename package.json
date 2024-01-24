@@ -9,7 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "framer-motion": "^10.16.4",
+    "@nextui-org/react": "^2.2.9",
+    "framer-motion": "^10.18.0",
     "next": "13.5.4",
     "react": "^18",
     "react-countup": "^6.4.2",
