@@ -35,7 +35,7 @@ export function FirstBlock() {
         <div className="my-20">
           <Reveal>
             <h1 className="text-4xl font-semibold">
-              <span className="block text-blue-400">La salud mental</span>
+              <span className="block degradedBlue bg-blueLight">La salud mental</span>
             </h1>
           </Reveal>
           <Reveal>

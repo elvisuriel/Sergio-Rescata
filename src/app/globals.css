@@ -17,7 +17,7 @@ body {
   /* Otras propiedades de fondo según tus necesidades */
 }
 ::selection {
-  background: #eff2f3;
+  background: #21bdf0;
 }
 
 .degradedBlue {
@@ -28,7 +28,7 @@ body {
 }
 
 .swiper-pagination-bullet {
-  background: #fff !important;
+  background: #2babe7 !important;
 }
 
 .swiper-pagination-bullet-active {

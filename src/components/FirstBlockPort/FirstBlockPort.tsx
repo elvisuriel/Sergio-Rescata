@@ -18,13 +18,13 @@ export function FirstBlockPort() {
           <Reveal>
             <h1 className="text-5xl font-semibold  text-white my-4">
               Sergio-Rescata
-              <span className="block mt-4">La salud mental</span>
-              es una prioridad
+              <span className="block mt-4">AYÚDANOS A</span>
+              AYUDAR
             </h1>
           </Reveal>
 
           <Reveal>
-            <div className=" flex  my-8">
+            <div className=" flex items-center justify-center  my-8">
               <Link
                 href="#clients"
                 className="px-4 py-3 rounded-md bg-blueRadial"
