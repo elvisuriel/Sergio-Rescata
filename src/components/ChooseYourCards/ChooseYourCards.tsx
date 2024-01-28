@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export function ChooseYourCards() {
     return (
-        <div className=" bg-emerald-200 relative px-6 py-20 md:py-20" id="tarjetas">
+        <div className=" bg-blue-200 relative px-6 py-20 md:py-20" id="tarjetas">
             <BackgroundRadialRight />
             <div className="block max-w-5xl mx-auto md:grid md:grid-cols-2">
                 <Reveal>

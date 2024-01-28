@@ -29,7 +29,7 @@ const banners = [
 ];
 export function FirstBlock() {
   return (
-    <div className=" bg-cyan-100 flex items-center justify-center relative p-4 md:py-20">
+    <div className="  flex items-center justify-center relative p-4 md:py-20">
       <BackgroundRadialRight />
       <div className="grid max-w-7xl mx-auto md:grid-cols-2">
         <div className="my-20">

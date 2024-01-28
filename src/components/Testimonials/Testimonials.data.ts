@@ -32,13 +32,13 @@ export const dataTestimonials = [
     name: "María Pérez",
     work: "Beneficiaria",
     testimonial: "Gracias a la ayuda de Sergio-Rescata, he logrado superar las adversidades y construir un futuro más prometedor. Su compromiso y empatía son un faro de esperanza para quienes enfrentan desafíos similares.",
-    image: "/assets/profile5.png",
+    image: "/assets/profile3.png",
   },
   {
     id: 6,
     name: "Alejandro Torres",
     work: "Voluntario",
     testimonial: "Sergio-Rescata va más allá de ofrecer ayuda; crea comunidades fuertes y solidarias. Ser parte de esta fundación me ha inspirado a hacer una diferencia significativa en la vida de quienes más lo necesitan.",
-    image: "/assets/profile6.png",
+    image: "/assets/profile4.png",
   },
 ];

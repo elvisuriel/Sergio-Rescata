@@ -24,10 +24,10 @@ export function Slide() {
                 clickable: true
             }}
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-            className="h-[250px] w-full md:max-w-5xl"
+            className="h-[450px] w-full md:max-w-5xl"
         >
             {dataTestimonials.map(({ id, name, work, testimonial, image }) => (
-                <SwiperSlide key={id} className="my-5 cursor-pointer md:px-10">
+                <SwiperSlide key={id} className="my-10 cursor-pointer md:px-10 bg-slate-400 ">
                     <Reveal>
                         <Image src="/assets/testimonial-icon.png" alt="Testimonial" width={50} height={50} className="w-auto h-auto" />
                         <div className="my-5">

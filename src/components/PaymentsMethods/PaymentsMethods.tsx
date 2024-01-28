@@ -8,7 +8,7 @@ import { CtaDark } from '../CtaDark'
 
 export function PaymentsMethods() {
     return (
-        <div className="relative py-20 md:py-64" id="servicios">
+        <div className="bg-cyan-100 relative py-20 md:py-64" id="servicios">
             <BackgroundRadialRight />
             <div className="relative w-full overflow-hidden">
                 <Swiper
@@ -26,9 +26,9 @@ export function PaymentsMethods() {
                     loop={true}
                     speed={2000}
                 >
-                    <div className="absolute flex">
+                    <div className="absolute flex ">
                         {dataPaymentMethods.map(({ id, image }) => (
-                            <SwiperSlide key={id} className="flex items-center slider-horizontal">
+                            <SwiperSlide key={id} className="flex items-center justify-center slider-horizontal bg-sky-500">
                                 <Image src={`/assets/${image}`} alt="Payment" width="70" height="70" className="h-[60px] w-[120px] object-contain" />
                             </SwiperSlide>
                         ))}
