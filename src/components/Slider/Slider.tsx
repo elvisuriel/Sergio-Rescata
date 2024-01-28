@@ -20,11 +20,11 @@ interface Banner {
   alt: string;
   title: string;
   description: string;
-  breakpoints?: number;
+  breakpoints: any;
 }
 
 interface CustomSliderProps {
-  banners: Banner[];
+  banners: any[]; // Cambié Banner[] a any[]
   className: string;
 }
 
@@ -41,10 +41,10 @@ export function CustomSlider({ banners, className }: CustomSliderProps) {
           delay: 5000,
           disableOnInteraction: false,
         }}
-        breakpoints={1}
+
         className="absolute h-full w-full rounded-lg text-blue"
       >
-        {banners.map(({ id, image, alt }) => (
+        {banners.map(({ id, image, alt }: any) => (
           <SwiperSlide key={id}>
             <div className="h-full w-full ">
               <div className="relative ">
