@@ -7,21 +7,21 @@ import Slider from "../Slider/Slider";
 const banners = [
   {
     id: 1,
-    image: "/assets/gif.gif",
+    image: "/assets/sres-3.jpeg",
     alt: "Outware Picks",
     title: "Outware Picks",
     description: "Descripción de la imagen 2...",
   },
   {
     id: 2,
-    image: "/assets/drogadicto-1.jpg",
+    image: "/assets/sres-4.jpeg",
     alt: "Seasonal Offers",
     title: "Seasonal Offers",
     description: "Descripción de la imagen 2...",
   },
   {
     id: 3,
-    image: "/assets/drogadicto-2.jpg",
+    image: "/assets/sres-5.jpeg",
     alt: "Best for men",
     title: "Best for men",
     description: "Descripción de la imagen 3...",
@@ -50,7 +50,7 @@ export function FirstBlock() {
             </p>
           </Reveal>
         </div>
-        <MotionTransition className="my-10 flex items-center justify-center h-96">
+        <MotionTransition className="my-20 flex items-center justify-center h-96">
           <Slider banners={banners} className="h-96 w-full" />
         </MotionTransition>
       </div>

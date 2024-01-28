@@ -32,12 +32,11 @@ export function CustomSlider({ banners, className }: CustomSliderProps) {
   return (
     <div className="grid grid-cols-1 items-center justify-items-center py-2 md:py-8">
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+        modules={[Navigation, Pagination, A11y, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
