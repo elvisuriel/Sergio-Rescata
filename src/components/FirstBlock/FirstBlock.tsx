@@ -50,8 +50,8 @@ export function FirstBlock() {
             </p>
           </Reveal>
         </div>
-        <MotionTransition className="my-10 flex items-center justify-center">
-          <Slider banners={banners} />
+        <MotionTransition className="my-10 flex items-center justify-center h-96">
+          <Slider banners={banners} className="h-96 w-full" />
         </MotionTransition>
       </div>
     </div>

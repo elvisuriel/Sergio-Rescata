@@ -20,9 +20,15 @@ interface Banner {
   alt: string;
   title: string;
   description: string;
+  breakpoints?: number;
 }
 
-export function CustomSlider({ banners }: { banners: Banner[] }) {
+interface CustomSliderProps {
+  banners: Banner[];
+  className: string;
+}
+
+export function CustomSlider({ banners, className }: CustomSliderProps) {
   return (
     <div className="grid grid-cols-1 items-center justify-items-center py-2 md:py-8">
       <Swiper
@@ -41,12 +47,12 @@ export function CustomSlider({ banners }: { banners: Banner[] }) {
       >
         {banners.map(({ id, image, alt }) => (
           <SwiperSlide key={id}>
-            <div className="h-48 w-full md:h-96">
-              <div className="relative h-full">
+            <div className="h-full w-full ">
+              <div className="relative ">
                 <Image
                   src={image}
                   alt={alt}
-                  className="relative h-48 w-full md:h-96"
+                  className={className}
                   width={600}
                   height={600}
                 />

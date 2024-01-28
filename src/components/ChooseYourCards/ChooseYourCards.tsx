@@ -16,7 +16,7 @@ export function ChooseYourCards() {
             <div className="block max-w-5xl mx-auto md:grid md:grid-cols-2">
                 <Reveal>
                     <h2 className="text-5xl font-semibold">Elige la tarjeta o cuenta bancaria
-                        <span className="block degradedBlue bg-blueRadial">Tu aparte salva vidas</span>
+                        <span className="block degradedBlue bg-blueRadial">Tu aporte salva vidas</span>
                     </h2>
                 </Reveal>
                 <div className="px-5">
