@@ -5,7 +5,7 @@ import { dataCounter } from "./CounterData.data";
 import { Button } from '@nextui-org/button';
 export function CounterData() {
   return (
-    <MotionTransition className="  max-w-7xl py-10 mx-auto md:py-20">
+    <MotionTransition className="mx-2 max-w-7xl py-4 md:mx-auto md:py-20">
       <div className=" rounded-xl px-4 bg-gradient-to-r from-cyan-500 to-blue-700 justify-between md:flex">
         {dataCounter.map(({ id, startNumber, endNumber, text }) => (
           <div key={id} className="py-5 text-2xl text-center md:text-left">

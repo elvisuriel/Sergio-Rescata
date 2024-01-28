@@ -31,13 +31,13 @@ export function FirstBlockPort() {
   return (
     <div className="relative mb-10">
       <div className="">
-        <Slider banners={banners} className="h-[600px] w-full" />
+        <Slider banners={banners} className="h-[300px] md:h-[600px] w-full" />
       </div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
         <Reveal>
-          <h1 className="text-5xl font-semibold my-4">
+          <h1 className="text-2xl md:text-5xl font-semibold my-4">
             Sergio-Rescata
-            <span className="block mt-4">AYÚDANOS A</span>
+            <span className="block mt-8">AYÚDANOS A</span>
             AYUDAR
           </h1>
         </Reveal>

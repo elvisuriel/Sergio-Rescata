@@ -8,12 +8,12 @@ import Image from "next/image";
 
 export function BestBusiness() {
   return (
-    <div className=" bg-blue-200 relative px-6 py-20 md:py-20  " id="features ">
+    <div className=" bg-blue-200 relative px-6 py-8 md:py-20  " id="features ">
       <BackgroundRadialLeft />
       <div className="grid max-w-5xl mx-auto md:grid-cols-2">
         <div>
           <Reveal>
-            <h2 className="text-5xl font-semibold">
+            <h2 className="text-2xl md:text-5xl font-semibold">
               <span className="block degradedBlue bg-blueRadial">
                 Únete a la Lucha
               </span>
