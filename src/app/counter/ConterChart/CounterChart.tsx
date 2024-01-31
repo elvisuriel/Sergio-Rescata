@@ -4,38 +4,48 @@ import { Chart } from "chart.js";
 
 export const CounterChart = () => {
     useEffect(() => {
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ["Menos de un año", "1-2 años", "2-3 años", "3-4 años", "4-5 años", "5 años y más"],
-                datasets: [
-                    {
-                        data: [84.9, 15.1],
-                        label: "Por género",
-                        borderColor: "#3cba9f",
-                        backgroundColor: "#71d1bd",
-                        fill: false,
-                    },
-                    {
-                        data: [1211, 5043],
-                        label: "Comparación de censos (2021 vs. 2023)",
-                        borderColor: "#ffa500",
-                        backgroundColor: "#ffc04d",
-                        fill: false,
-                    },
-                    {
-                        data: [7, 6.6, 6.7, 6.8, 5.1, 67.8],
-                        label: "Tiempo en la calle",
-                        borderColor: "#3e95cd",
-                        backgroundColor: "#7bb6dd",
-                        fill: false,
-                    },
-                ],
-            },
-        });
-    }, []);
+        const canvas = document.getElementById('myChart') as HTMLCanvasElement | null;
 
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+
+            if (ctx) {
+                const myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ["Menos de un año", "1-2 años", "2-3 años", "3-4 años", "4-5 años", "5 años y más"],
+                        datasets: [
+                            {
+                                data: [84.9, 15.1],
+                                label: "Por género",
+                                borderColor: "#3cba9f",
+                                backgroundColor: "#71d1bd",
+                                fill: false,
+                            },
+                            {
+                                data: [1211, 5043],
+                                label: "Comparación de censos (2021 vs. 2023)",
+                                borderColor: "#ffa500",
+                                backgroundColor: "#ffc04d",
+                                fill: false,
+                            },
+                            {
+                                data: [7, 6.6, 6.7, 6.8, 5.1, 67.8],
+                                label: "Tiempo en la calle",
+                                borderColor: "#3e95cd",
+                                backgroundColor: "#7bb6dd",
+                                fill: false,
+                            },
+                        ],
+                    },
+                });
+            } else {
+                console.error("No se pudo obtener el contexto 2D del lienzo");
+            }
+        } else {
+            console.error("No se encontró el elemento con ID 'myChart'");
+        }
+    }, []);
     return (
         <>
             {/* Line chart */}
