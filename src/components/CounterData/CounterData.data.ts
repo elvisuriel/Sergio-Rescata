@@ -2,19 +2,19 @@ export const dataCounter = [
   {
     id: 1,
     startNumber: 500,
-    endNumber: 3800,
-    text: "Dane",
+    endNumber: 5043,
+    text: "Dane 2021",
   },
   {
     id: 2,
     startNumber: 0,
-    endNumber: 230,
-    text: "mas estadisticas ",
+    endNumber: 84.9,
+    text: "% Hombres  ",
   },
   {
     id: 3,
     startNumber: 600,
-    endNumber: 1800,
-    text: "otras estadisticas",
+    endNumber: 15.1,
+    text: "% Mujeres",
   },
 ];
