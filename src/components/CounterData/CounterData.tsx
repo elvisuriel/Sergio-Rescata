@@ -3,6 +3,7 @@ import CountUp from "react-countup";
 import { MotionTransition } from "../MotionTransition";
 import { dataCounter } from "./CounterData.data";
 import { Button } from '@nextui-org/button';
+import Link from "next/link";
 export function CounterData() {
   return (
     <MotionTransition className="mx-2 max-w-7xl py-4 md:mx-auto md:py-20">
@@ -22,8 +23,10 @@ export function CounterData() {
 
       </div>
       <div className="my-4 flex items-center justify-center">
-        <Button color="primary" >Ver mas</Button>
+        <Link href="/counter">
+          <Button color="primary">Ver más</Button>
+        </Link>
       </div>
-    </MotionTransition>
+    </MotionTransition >
   );
 }
