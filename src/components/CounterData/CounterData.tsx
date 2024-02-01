@@ -10,7 +10,7 @@ export function CounterData() {
       <div className=" rounded-xl px-4 bg-gradient-to-r from-cyan-500 to-blue-700 justify-between md:flex">
         {dataCounter.map(({ id, startNumber, endNumber, text }) => (
           <div key={id} id={`counter-${id}`} className="py-5 text-2xl text-center md:text-left">
-            +
+
             <CountUp
               start={startNumber}
               end={endNumber}

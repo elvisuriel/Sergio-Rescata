@@ -4,24 +4,37 @@ import { Chart } from "chart.js";
 
 export const CounterChart = () => {
     useEffect(() => {
-        const canvas = document.getElementById('myChart') as HTMLCanvasElement | null;
+        const canvas1 = document.getElementById('chart1') as HTMLCanvasElement | null;
+        const canvas2 = document.getElementById('chart2') as HTMLCanvasElement | null;
+        const canvas3 = document.getElementById('chart3') as HTMLCanvasElement | null;
 
-        if (canvas) {
-            const ctx = canvas.getContext('2d');
+        if (canvas1 && canvas2 && canvas3) {
+            const ctx1 = canvas1.getContext('2d');
+            const ctx2 = canvas2.getContext('2d');
+            const ctx3 = canvas3.getContext('2d');
 
-            if (ctx) {
-                const myChart = new Chart(ctx, {
+            if (ctx1 && ctx2 && ctx3) {
+                const chart1 = new Chart(ctx1, {
                     type: 'line',
                     data: {
                         labels: ["Menos de un año", "1-2 años", "2-3 años", "3-4 años", "4-5 años", "5 años y más"],
                         datasets: [
                             {
-                                data: [84.9, 15.1],
-                                label: "Por género",
+                                data: [7, 6.6, 6.7, 6.8, 5.1, 67.8],
+                                label: "Tiempo en en la calle",
                                 borderColor: "#3cba9f",
                                 backgroundColor: "#71d1bd",
                                 fill: false,
                             },
+                        ],
+                    },
+                });
+
+                const chart2 = new Chart(ctx2, {
+                    type: 'line',
+                    data: {
+                        labels: ["2021 = 1211", "2023 = 5043"],
+                        datasets: [
                             {
                                 data: [1211, 5043],
                                 label: "Comparación de censos (2021 vs. 2023)",
@@ -29,37 +42,48 @@ export const CounterChart = () => {
                                 backgroundColor: "#ffc04d",
                                 fill: false,
                             },
+                        ],
+                    },
+                });
+
+                const chart3 = new Chart(ctx3, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ["Hombres", "Mujeres"],
+                        datasets: [
                             {
-                                data: [7, 6.6, 6.7, 6.8, 5.1, 67.8],
-                                label: "Tiempo en la calle",
-                                borderColor: "#3e95cd",
-                                backgroundColor: "#7bb6dd",
-                                fill: false,
+                                data: [84.9, 15.1],
+                                backgroundColor: ["#3cba9f", "#7186d1"],
                             },
                         ],
                     },
                 });
             } else {
-                console.error("No se pudo obtener el contexto 2D del lienzo");
+                console.error("No se pudo obtener el contexto 2D de los lienzos");
             }
         } else {
-            console.error("No se encontró el elemento con ID 'myChart'");
+            console.error("No se encontró el elemento con ID 'chart1', 'chart2', o 'chart3'");
         }
     }, []);
     return (
-        <>
-            {/* Line chart */}
-            <h1 className="w-[110px] mx-auto mt-10 text-xl font-semibold capitalize">Line Chart</h1>
-            <div className="w-[1100px] h-screen flex mx-auto my-auto">
-                <div className='border border-gray-400 pt-0 rounded-xl  w-full h-fit my-auto  shadow-xl'>
-                    <canvas id='myChart'></canvas>
-                </div>
+        <div className="my-20 flex flex-wrap justify-center">
+            {/* Chart 1 */}
+            <div className='border border-gray-400 pt-0 rounded-xl w-full md:w-1/2 lg:w-1/3 h-fit my-auto shadow-xl m-2'>
+                <canvas id='chart1'></canvas>
             </div>
 
+            {/* Chart 2 */}
+            <div className='border border-gray-400 pt-0 rounded-xl w-full md:w-1/2 lg:w-1/3 h-fit my-auto shadow-xl m-2'>
+                <canvas id='chart2'></canvas>
+            </div>
+            {/* Chart 2 */}
+            <div className='border border-gray-400 pt-0 rounded-xl w-full md:w-1/2 lg:w-1/3 h-fit my-auto shadow-xl m-2'>
+                <canvas id='chart3'></canvas>
+            </div>
             {/* Table */}
-            <h1 className="w-[110px] mx-auto mt-10 text-xl font-semibold capitalize">Tabla de Datos</h1>
-            <div className="w-[1100px] mx-auto">
-                <table className="table-auto border-collapse border border-gray-800">
+            <div className="w-full md:w-1/2 lg:w-1/3 m-2">
+                <h1 className="text-xl font-semibold capitalize">Tabla de Datos</h1>
+                <table className="table-auto border-collapse border border-gray-800 w-full">
                     <thead>
                         <tr>
                             <th className="border border-gray-800 p-2">Categoría</th>
@@ -82,6 +106,6 @@ export const CounterChart = () => {
                     </tbody>
                 </table>
             </div>
-        </>
+        </div>
     );
 };
