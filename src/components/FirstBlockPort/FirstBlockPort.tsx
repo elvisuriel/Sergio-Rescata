@@ -41,18 +41,23 @@ export function FirstBlockPort() {
             AYUDAR
           </h1>
         </Reveal>
+        <div className="flex items-center justify-center">
+          <Reveal>
+            <div className="flex items-center justify-center my-8">
+              <Link
+                href="#clients"
+                className="px-4 py-3 rounded-md bg-blueRadial"
+                style={{ display: "inline-block" }}
+              >
+                Empieza ahora
+              </Link>
+            </div>
+          </Reveal>
 
-        <Reveal>
-          <div className="flex items-center justify-center my-8">
-            <Link
-              href="#clients"
-              className="px-4 py-3 rounded-md bg-blueRadial"
-            >
-              Empieza ahora
-            </Link>
-          </div>
-        </Reveal>
+        </div>
+
       </div>
+
     </div>
   );
 }

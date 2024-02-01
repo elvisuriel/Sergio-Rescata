@@ -97,9 +97,5 @@ export const footerSocialNetworks = [
     icon: <RiTwitterXFill />,
     link: "#"
   },
-  {
-    id: 4,
-    icon: <RiLinkedinBoxFill />,
-    link: "#"
-  },
+
 ];
