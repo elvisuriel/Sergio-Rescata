@@ -5,7 +5,7 @@ export default function About() {
         <>
 
             <Reveal>
-                <div className="text-center my-10 max-w-4xl mx-64">
+                <div className="text-center my-10 max-w-4xl mx-10 md:mx-64">
                     <h1 className="text-4xl md:text-6xl font-bold mb-4 text-red-500">FUNDACION SERGIO RESCATA</h1>
                     <p className="text-xl md:text-2xl mb-8 text-red-500">
                         AYÚDANOS A AYUDAR
