@@ -9,7 +9,7 @@ export function Footer() {
         <div className="max-w-5xl p-6 mx-auto mt-10  bg-slate-400">
             <div className="justify-between md:flex">
                 <div>
-                    <Image src="/assets/logo.png" width={200} height={40} alt="Logo Bank" />
+                    <Image src="/assets/logo.jpg" width={200} height={40} alt="Logo Sergio" />
                     <Reveal>
                         <p className="mt-5 text-primaryDark max-w-[250px]">Ayúdanos a Ayudar</p>
                     </Reveal>
