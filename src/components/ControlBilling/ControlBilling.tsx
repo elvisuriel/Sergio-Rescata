@@ -11,17 +11,17 @@ export function ControlBilling() {
             <div className="flex flex-col-reverse max-w-5xl mx-auto md:flex-row place-content-evenly">
                 <MotionTransition className="flex-1 p-6 md:p-8">
                     {/* Primer video de YouTube */}
-                    <Link href="https://www.youtube.com/watch?v=udykun1NawE" passHref>
-                        <a target="_blank" rel="noopener noreferrer">
+                    <div className="aspect-w-16 aspect-h-9 relative">
+                        <Link href="https://www.youtube.com/watch?v=udykun1NawE" passHref>
                             <Image
-                                src="/assets/youtube.jpg"
+                                src="/assets/youtube-thumbnail-1.jpg"
                                 alt="Video 1"
                                 layout="fill"
                                 objectFit="cover"
                                 className="rounded-md cursor-pointer"
                             />
-                        </a>
-                    </Link>
+                        </Link>
+                    </div>
                 </MotionTransition>
                 <div className="flex-1 p-6 md:p-8">
                     <Reveal>
@@ -36,17 +36,17 @@ export function ControlBilling() {
                         </p>
                     </Reveal>
                     {/* Segundo video de YouTube */}
-                    <Link href="https://www.youtube.com/watch?v=iwOJdpvKpLc" passHref>
-                        <a target="_blank" rel="noopener noreferrer">
+                    <div className="aspect-w-16 aspect-h-9 relative mt-6">
+                        <Link href="https://www.youtube.com/watch?v=iwOJdpvKpLc" passHref>
                             <Image
-                                src="/assets/youtube.jpg"
+                                src="/assets/youtube-thumbnail-2.jpg"
                                 alt="Video 2"
                                 layout="fill"
                                 objectFit="cover"
                                 className="rounded-md cursor-pointer"
                             />
-                        </a>
-                    </Link>
+                        </Link>
+                    </div>
                     {/* Botón para ver galería */}
                     <Reveal>
                         <Link href="/galeria" passHref>
