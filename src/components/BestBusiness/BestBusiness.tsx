@@ -33,7 +33,7 @@ export function BestBusiness() {
           <Reveal>
             <div className="my-8">
               <Link
-                href="#clients"
+                href="/payment"
                 className="px-4 py-3 rounded-md bg-blueRadial"
               >
                 Realizar Aporte
