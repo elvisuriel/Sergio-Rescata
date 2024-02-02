@@ -11,7 +11,7 @@ export default function Payment() {
                     </a>
                 </li>
                 <li className="mb-4">
-                    <a href="URL_DEL_SERVICIO_DE_PAGO_2" target="_blank" rel="noopener noreferrer" className="bg-green-500 text-white py-2 px-4 rounded inline-block hover:bg-green-700">
+                    <a href="https://www.paypal.com/co/home" target="_blank" rel="noopener noreferrer" className="bg-green-500 text-white py-2 px-4 rounded inline-block hover:bg-green-700">
                         Pago con PayPal
                     </a>
                 </li>
