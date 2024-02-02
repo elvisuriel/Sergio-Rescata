@@ -29,7 +29,7 @@ const banners = [
 
 export function FirstBlockPort() {
   return (
-    <div className="relative mb-10">
+    <div className="relative">
       <div className="">
         <Slider banners={banners} className="h-[300px] md:h-[600px] w-full" />
       </div>
@@ -45,11 +45,11 @@ export function FirstBlockPort() {
           <Reveal>
             <div className="flex items-center justify-center my-8">
               <Link
-                href="#clients"
+                href="/payment"
                 className="px-4 py-3 rounded-md bg-blueRadial"
                 style={{ display: "inline-block" }}
               >
-                Empieza ahora
+                Realizar Aporte
               </Link>
             </div>
           </Reveal>
