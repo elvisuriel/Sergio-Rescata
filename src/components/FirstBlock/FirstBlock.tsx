@@ -40,7 +40,7 @@ export function FirstBlock() {
             </h1>
           </Reveal>
           <Reveal>
-            <p className="text-justify  flex items-center justify-center max-w-md mt-10 font-semibold text-xl">
+            <p className="mx-4 md:mx-0 text-justify  flex items-center justify-center max-w-md mt-10 font-semibold text-xl">
               Transformamos la vida de quienes desean retornar a la sobriedad, los ayudamos a
               recuperar sus objetivos, metas y sueños. Abordamos las áreas vitales para una
               recuperación completa: espiritual, familiar, psicológica, psiquiátrica y física. Somos una
