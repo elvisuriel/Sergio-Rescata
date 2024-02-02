@@ -8,17 +8,28 @@ import Link from "next/link";
 export function ControlBilling() {
     return (
         <div className="p-4 py-8 md:py-10">
-            <div className="flex flex-col-reverse max-w-5xl mx-auto md:flex-row place-content-evenly">
+            <div className="flex  items-center justify-center flex-col-reverse max-w-5xl mx-auto md:flex-row place-content-evenly">
                 <MotionTransition className="flex-1 p-6 md:p-8">
                     {/* Primer video de YouTube */}
-                    <div className="aspect-w-16 aspect-h-9 relative">
+                    <div className="aspect-w-16 aspect-h-9 relative h-20 w-28" >
                         <Link href="https://www.youtube.com/watch?v=udykun1NawE" passHref>
                             <Image
-                                src="/assets/youtube-thumbnail-1.jpg"
+                                src="/assets/youtube.jpg"
                                 alt="Video 1"
                                 layout="fill"
-                                objectFit="cover"
-                                className="rounded-md cursor-pointer"
+                                className="rounded-md cursor-pointer h-full w-full"
+                                priority={true}
+                            />
+                        </Link>
+                    </div>
+                    <div className="aspect-w-16 aspect-h-9 relative mt-6 h-20 w-28 " >
+                        <Link href="https://www.youtube.com/watch?v=iwOJdpvKpLc" passHref>
+                            <Image
+                                src="/assets/youtube.jpg"
+                                alt="Video 2"
+                                layout="fill"
+                                className="rounded-md cursor-pointer h-28 w-36"
+                                priority={true}
                             />
                         </Link>
                     </div>
@@ -35,18 +46,8 @@ export function ControlBilling() {
                             Descubre las conmovedoras experiencias vividas en la fundación y cómo hemos impactado positivamente en la vida de aquellos que han pasado por nuestras puertas.
                         </p>
                     </Reveal>
-                    {/* Segundo video de YouTube */}
-                    <div className="aspect-w-16 aspect-h-9 relative mt-6">
-                        <Link href="https://www.youtube.com/watch?v=iwOJdpvKpLc" passHref>
-                            <Image
-                                src="/assets/youtube-thumbnail-2.jpg"
-                                alt="Video 2"
-                                layout="fill"
-                                objectFit="cover"
-                                className="rounded-md cursor-pointer"
-                            />
-                        </Link>
-                    </div>
+
+
                     {/* Botón para ver galería */}
                     <Reveal>
                         <Link href="/galeria" passHref>
