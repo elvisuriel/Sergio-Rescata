@@ -3,31 +3,29 @@
 import Image from "next/image";
 import { MotionTransition } from "../MotionTransition";
 import { Reveal } from "../Reveal";
+import Link from "next/link";
 
 export function ControlBilling() {
-    const youtubeVideoUrls = [
-        "https://www.youtube.com/watch?v=udykun1NawE",
-        "https://www.youtube.com/watch?v=iwOJdpvKpLc",
-    ];
     return (
         <div className="p-4 py-8 md:py-10">
             <div className="flex flex-col-reverse max-w-5xl mx-auto md:flex-row place-content-evenly">
                 <MotionTransition className="flex-1 p-6 md:p-8">
                     {/* Primer video de YouTube */}
-                    <div className="aspect-w-16 aspect-h-9">
-                        <iframe
-                            className="w-full h-full"
-                            src={youtubeVideoUrls[0]}  // Puedes cambiar el índice para mostrar otro video
-                            title="YouTube video player"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        ></iframe>
-                    </div>
+                    <Link href="https://www.youtube.com/watch?v=udykun1NawE" passHref>
+                        <a target="_blank" rel="noopener noreferrer">
+                            <Image
+                                src="/assets/youtube.jpg"
+                                alt="Video 1"
+                                layout="fill"
+                                objectFit="cover"
+                                className="rounded-md cursor-pointer"
+                            />
+                        </a>
+                    </Link>
                 </MotionTransition>
                 <div className="flex-1 p-6 md:p-8">
                     <Reveal>
-                        <h2 className="text-5xl font-semibold">
+                        <h2 className="text-2xl md:text-5xl font-semibold">
                             Transformando vidas con <br />
                             experiencias significativas
                         </h2>
@@ -38,21 +36,24 @@ export function ControlBilling() {
                         </p>
                     </Reveal>
                     {/* Segundo video de YouTube */}
-                    <div className="aspect-w-16 aspect-h-9 mt-6">
-                        <iframe
-                            className="w-full h-full"
-                            src={youtubeVideoUrls[1]}  // Puedes cambiar el índice para mostrar otro video
-                            title="YouTube video player"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        ></iframe>
-                    </div>
+                    <Link href="https://www.youtube.com/watch?v=iwOJdpvKpLc" passHref>
+                        <a target="_blank" rel="noopener noreferrer">
+                            <Image
+                                src="/assets/youtube.jpg"
+                                alt="Video 2"
+                                layout="fill"
+                                objectFit="cover"
+                                className="rounded-md cursor-pointer"
+                            />
+                        </a>
+                    </Link>
                     {/* Botón para ver galería */}
                     <Reveal>
-                        <button className="mt-6 bg-blue-500 text-white px-4 py-2 rounded-md">
-                            Ver Galería
-                        </button>
+                        <Link href="/galeria" passHref>
+                            <button className="mt-6 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">
+                                Ver Galería
+                            </button>
+                        </Link>
                     </Reveal>
                 </div>
             </div>
