@@ -30,17 +30,17 @@ const banners = [
 ];
 export function FirstBlock() {
   return (
-    <div className="  flex items-center justify-center relative p-4 py-8 md:py-20">
+    <div className="  flex items-center justify-center relative p-4 py-4 md:py-8">
       <BackgroundRadialRight />
       <div className="grid max-w-7xl mx-auto md:grid-cols-2">
         <div className="my-2 md:my-10">
           <Reveal>
-            <h1 className="text-4xl font-semibold">
+            <h1 className=" text-justify text-4xl font-semibold">
               <span className="block degradedBlue bg-blueRadial">FUNDACION SERGIO RESCATA</span>
             </h1>
           </Reveal>
           <Reveal>
-            <p className=" flex items-center justify-center max-w-md mt-10 font-semibold text-xl">
+            <p className="text-justify  flex items-center justify-center max-w-md mt-10 font-semibold text-xl">
               Transformamos la vida de quienes desean retornar a la sobriedad, los ayudamos a
               recuperar sus objetivos, metas y sueños. Abordamos las áreas vitales para una
               recuperación completa: espiritual, familiar, psicológica, psiquiátrica y física. Somos una

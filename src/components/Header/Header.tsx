@@ -5,14 +5,14 @@ import { RiMenu3Line } from "react-icons/ri";
 import { dataHeader } from "./Header.data";
 import { useState } from "react";
 import { MotionTransition } from "../MotionTransition/";
-import { footerSocialNetworks } from "../Footer/Footer.data";
+
 
 export function Header() {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
 
   return (
     <MotionTransition>
-      <nav className="px-2 md:px-10 lg:px-40 flex flex-wrap items-center justify-between w-full p-2 mx-auto md:py-4 bg-gradient-to-b from-blue-700 to-transparent">
+      <nav className="px-2 md:px-10 lg:px-40 flex flex-wrap items-center justify-between w-full p-2 mx-auto md:py-4 bg-gradient-to-b from-blue-700 to-blue-300">
         <Link href="/" className="flex items-center">
           <Image
             src="/assets/logo.jpg"
@@ -42,13 +42,7 @@ export function Header() {
               </div>
             ))}
           </div>
-          <div className="mx-2 mt-4 flex items-center justify-center gap-5 ">
-            {footerSocialNetworks.map(({ id, icon, link }) => (
-              <Link key={id} href={link} className="text-2xl">
-                {icon}
-              </Link>
-            ))}
-          </div>
+
         </div>
 
       </nav>

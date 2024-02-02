@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Reveal } from "../Reveal";
 import Slider from "../Slider/Slider";
-
+import { footerSocialNetworks } from "../Footer/Footer.data";
 const banners = [
   {
     id: 1,
@@ -29,14 +29,14 @@ const banners = [
 
 export function FirstBlockPort() {
   return (
-    <div className="relative">
+    <div className="relative md:-mt-10 mt-0">
       <div className="">
         <Slider banners={banners} className="h-[300px] md:h-[600px] w-full" />
       </div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
         <Reveal>
           <h1 className="text-2xl md:text-5xl font-semibold my-4">
-            Sergio-Rescata
+            SERGIO-RESCATA
             <span className="block mt-8">AYÚDANOS A</span>
             AYUDAR
           </h1>
@@ -52,12 +52,21 @@ export function FirstBlockPort() {
                 Realizar Aporte
               </Link>
             </div>
+
           </Reveal>
 
         </div>
 
       </div>
-
+      <Reveal>
+        <div className="mx-2 mt-4 z-50 justify-center gap-5 fixed top-1/2 right-10 transform -translate-y-1/2 flex flex-col items-center">
+          {footerSocialNetworks.map(({ id, icon, link }) => (
+            <Link key={id} href={link} className="text-4xl">
+              {icon}
+            </Link>
+          ))}
+        </div>
+      </Reveal>
     </div>
   );
 }
