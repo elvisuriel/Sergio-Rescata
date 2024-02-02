@@ -7,7 +7,7 @@ export const dataHeader = [
   {
     id: 2,
     name: "Estadísticas",
-    idLink: "#tarjetas",
+    idLink: "#estadisticas",
   },
   {
     id: 3,

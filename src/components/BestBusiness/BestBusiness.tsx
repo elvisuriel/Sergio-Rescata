@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export function BestBusiness() {
   return (
-    <div className=" bg-blue-200 relative px-6 py-8 md:py-20  " id="features ">
+    <div className=" bg-blue-200 relative px-6 py-8 md:py-8  " id="features ">
       <BackgroundRadialLeft />
       <div className="grid max-w-5xl mx-auto md:grid-cols-2">
         <div>

@@ -20,7 +20,7 @@ export default function Home() {
       <CounterData />
       <BestBusiness />
       <ChooseYourCards />
-      {/*  <ControlBilling /> */}
+      <ControlBilling />
       <Testimonials />
       <PaymentsMethods />
       <Footer />

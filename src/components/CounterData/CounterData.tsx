@@ -6,8 +6,8 @@ import { Button } from '@nextui-org/button';
 import Link from "next/link";
 export function CounterData() {
   return (
-    <MotionTransition className="mx-2 max-w-7xl py-4 md:mx-auto md:py-20">
-      <div className=" rounded-xl px-4 bg-gradient-to-r from-cyan-500 to-blue-700 justify-between md:flex">
+    <MotionTransition className="mx-2 max-w-7xl py-4 md:mx-auto md:py-20 ">
+      <div className=" rounded-xl px-4 bg-gradient-to-r from-cyan-500 to-blue-700 justify-between md:flex" id="estadisticas">
         {dataCounter.map(({ id, startNumber, endNumber, text }) => (
           <div key={id} id={`counter-${id}`} className="py-5 text-2xl text-center md:text-left">
 
