@@ -59,9 +59,9 @@ export function FirstBlockPort() {
 
       </div>
       <Reveal>
-        <div className="mx-2 mt-4 z-50 justify-center gap-5 fixed top-1/2 right-10 transform -translate-y-1/2 flex flex-col items-center">
+        <div className="mx-2 mt-4 z-50 justify-center gap-5 fixed top-1/2 right-0 md:right-10 transform -translate-y-1/2 flex flex-col items-center">
           {footerSocialNetworks.map(({ id, icon, link }) => (
-            <Link key={id} href={link} className="text-4xl">
+            <Link key={id} href={link} className=" text-lg md:text-4xl">
               {icon}
             </Link>
           ))}
