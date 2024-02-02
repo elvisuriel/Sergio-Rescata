@@ -5,6 +5,10 @@ import { MotionTransition } from "../MotionTransition";
 import { Reveal } from "../Reveal";
 
 export function ControlBilling() {
+    const youtubeVideoUrls = [
+        "https://www.youtube.com/watch?v=udykun1NawE",
+        "https://www.youtube.com/watch?v=iwOJdpvKpLc",
+    ];
     return (
         <div className="p-4 py-8 md:py-10">
             <div className="flex flex-col-reverse max-w-5xl mx-auto md:flex-row place-content-evenly">
@@ -13,11 +17,12 @@ export function ControlBilling() {
                     <div className="aspect-w-16 aspect-h-9">
                         <iframe
                             className="w-full h-full"
-                            src="https://www.youtube.com/watch?v=udykun1NawE"
-                            title="YouTube Video 1"
+                            src={youtubeVideoUrls[0]}  // Puedes cambiar el índice para mostrar otro video
+                            title="YouTube video player"
                             frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
-                        />
+                        ></iframe>
                     </div>
                 </MotionTransition>
                 <div className="flex-1 p-6 md:p-8">
@@ -36,11 +41,12 @@ export function ControlBilling() {
                     <div className="aspect-w-16 aspect-h-9 mt-6">
                         <iframe
                             className="w-full h-full"
-                            src="https://www.youtube.com/watch?v=iwOJdpvKpLc"
-                            title="YouTube Video 2"
+                            src={youtubeVideoUrls[1]}  // Puedes cambiar el índice para mostrar otro video
+                            title="YouTube video player"
                             frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
-                        />
+                        ></iframe>
                     </div>
                     {/* Botón para ver galería */}
                     <Reveal>
