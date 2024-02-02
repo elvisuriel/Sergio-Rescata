@@ -11,7 +11,7 @@ export default function About() {
                         AYÚDANOS A AYUDAR
                     </p>
                     <span className="text-xl md:text-2xl mb-8 leading-relaxed">MISIÓN:</span>
-                    <p className="mt-4 text-xl md:text-2xl mb-8 leading-relaxed">
+                    <p className="text-justify md:text-center mt-4 text-xl md:text-2xl mb-8 leading-relaxed">
 
                         Transformamos la vida de quienes desean retornar a la sobriedad, los ayudamos a
                         recuperar sus objetivos, metas y sueños. Abordamos las áreas vitales para una
