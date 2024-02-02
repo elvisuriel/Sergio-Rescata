@@ -6,21 +6,21 @@ import Slider from "../Slider/Slider";
 const banners = [
   {
     id: 1,
-    image: "/assets/sres-6.jpeg",
+    image: "/assets/sergio-1.jpg",
     alt: "Outware Picks",
     title: "Outware Picks",
     description: "Descripción de la imagen 2...",
   },
   {
     id: 2,
-    image: "/assets/sres-1.jpeg",
+    image: "/assets/sergio-5.jpg",
     alt: "Seasonal Offers",
     title: "Seasonal Offers",
     description: "Descripción de la imagen 2...",
   },
   {
     id: 3,
-    image: "/assets/sres-2.jpeg",
+    image: "/assets/sergio-2.jpg",
     alt: "Best for men",
     title: "Best for men",
     description: "Descripción de la imagen 3...",

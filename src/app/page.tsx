@@ -21,8 +21,8 @@ export default function Home() {
       <BestBusiness />
       <ChooseYourCards />
       <ControlBilling />
-      <Testimonials />
       <PaymentsMethods />
+      <Testimonials />
       <Footer />
 
     </>

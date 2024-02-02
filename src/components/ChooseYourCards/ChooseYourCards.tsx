@@ -15,8 +15,11 @@ export function ChooseYourCards() {
             <BackgroundRadialRight />
             <div className="block max-w-5xl mx-auto md:grid md:grid-cols-2">
                 <Reveal>
-                    <h2 className="text-2xl md:text-5xl font-semibold">Elige la tarjeta o cuenta bancaria
-                        <span className="block degradedBlue bg-blueRadial">Tu aporte salva vidas</span>
+                    <h2 className="text-2xl md:text-5xl font-semibold">
+                        Contribuye con nosotros
+                        <span className="block degradedBlue bg-blueRadial">
+                            Tu aporte es la clave para cambiar vidas y construir un futuro mejor.
+                        </span>
                     </h2>
                 </Reveal>
                 <div className="px-5">
@@ -28,7 +31,7 @@ export function ChooseYourCards() {
                         >
                             {dataCards.map(({ image, id }) => (
                                 <SwiperSlide key={id}>
-                                    <Image src={image} alt="Credit Card" width="400" height="300" />
+                                    <Image src={image} alt="Credit Card" width="400" height="300" className='mx-4  w-96 h-64' />
                                 </SwiperSlide>
                             ))}
                         </Swiper>

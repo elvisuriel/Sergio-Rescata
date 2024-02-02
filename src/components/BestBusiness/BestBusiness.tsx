@@ -24,8 +24,7 @@ export function BestBusiness() {
           <Reveal>
             <p className="max-w-md mt-10">
               Las estadísticas son claras: la drogadicción en nuestra ciudad
-              está en aumento. [Incluye datos relevantes sobre el uso de
-              sustancias, tasas de adicción, etc.]. Detrás de estas cifras, hay
+              está en aumento. Pasamos a tener más de 5.000 habitantes según el último censo de 2021. Detrás de estas cifras, hay
               historias reales de lucha, dolor y esperanza. Nosotros estamos
               aquí para ser la voz de aquellos que necesitan ayuda y apoyo.
             </p>

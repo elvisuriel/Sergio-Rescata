@@ -14,6 +14,14 @@ export function PaymentsMethods() {
                 <Swiper
                     breakpoints={{
                         320: {
+                            slidesPerView: 3,
+                            spaceBetween: 15
+                        },
+                        520: {
+                            slidesPerView: 5,
+                            spaceBetween: 15
+                        },
+                        1200: {
                             slidesPerView: 8,
                             spaceBetween: 15
                         }
@@ -29,7 +37,7 @@ export function PaymentsMethods() {
                     <div className="absolute flex ">
                         {dataPaymentMethods.map(({ id, image }) => (
                             <SwiperSlide key={id} className="flex items-center justify-center slider-horizontal bg-sky-500">
-                                <Image src={`/assets/${image}`} alt="Payment" width="70" height="70" className="h-[60px] w-[120px] object-contain" />
+                                <Image src={`/assets/${image}`} alt="Payment" width="180" height="120" className="mx-auto  h-[200px] w-[120px] object-contain" />
                             </SwiperSlide>
                         ))}
                     </div>

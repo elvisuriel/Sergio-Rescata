@@ -1,34 +1,34 @@
 export const dataPaymentMethods = [
   {
     id: 1,
-    image: "payment-1.png",
+    image: "sergio-1.jpg",
   },
   {
     id: 2,
-    image: "payment-2.png",
+    image: "sergio-2.jpg",
   },
   {
     id: 3,
-    image: "payment-3.png",
+    image: "sergio-3.jpg",
   },
   {
     id: 4,
-    image: "payment-4.png",
+    image: "sergio-4.jpg",
   },
   {
     id: 5,
-    image: "payment-5.png",
+    image: "sergio-5.jpg",
   },
   {
     id: 6,
-    image: "payment-6.png",
+    image: "sergio-6.jpg",
   },
   {
     id: 7,
-    image: "payment-7.png",
+    image: "sergio-7.jpg",
   },
   {
     id: 8,
-    image: "payment-8.png",
+    image: "sergio-8.jpg",
   },
 ];

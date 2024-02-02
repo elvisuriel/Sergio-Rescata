@@ -8,21 +8,21 @@ import { Button } from '@nextui-org/button';
 const banners = [
   {
     id: 1,
-    image: "/assets/sres-3.jpeg",
+    image: "/assets/sergio-3.jpg",
     alt: "Outware Picks",
     title: "Outware Picks",
     description: "Descripción de la imagen 2...",
   },
   {
     id: 2,
-    image: "/assets/sres-4.jpeg",
+    image: "/assets/sergio-6.jpg",
     alt: "Seasonal Offers",
     title: "Seasonal Offers",
     description: "Descripción de la imagen 2...",
   },
   {
     id: 3,
-    image: "/assets/sres-5.jpeg",
+    image: "/assets/sergio-9.jpg",
     alt: "Best for men",
     title: "Best for men",
     description: "Descripción de la imagen 3...",
