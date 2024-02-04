@@ -36,7 +36,7 @@ export function FirstBlockPort() {
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
         <Reveal>
           <h1 className="text-2xl md:text-5xl font-semibold my-4">
-            SERGIO-RESCATA
+            SERGIO RESCATA
             <span className="block mt-8">AYÚDANOS A</span>
             AYUDAR
           </h1>

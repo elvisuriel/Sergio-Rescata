@@ -85,17 +85,17 @@ export const footerSocialNetworks = [
   {
     id: 1,
     icon: <RiInstagramLine />,
-    link: "#"
+    link: "https://www.instagram.com/sergiorescata?igsh=dTYzMXhqZmd1cmEx"
   },
   {
     id: 2,
     icon: <RiFacebookCircleFill />,
-    link: "#"
+    link: "https://www.facebook.com/sergiorescata1?mibextid=kFxxJD"
   },
   {
     id: 3,
     icon: <RiTwitterXFill />,
-    link: "#"
+    link: "https://twitter.com/?lang=es"
   },
 
 ];

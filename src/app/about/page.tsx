@@ -6,11 +6,11 @@ export default function About() {
 
             <Reveal>
                 <div className="text-center my-10 max-w-4xl mx-10 md:mx-20  lg:mx-40 xl:mx-64">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4 text-red-500">FUNDACION SERGIO RESCATA</h1>
-                    <p className="text-xl md:text-2xl mb-8 text-red-500">
+                    <h1 className=" underline text-4xl md:text-6xl font-bold mb-4 text-red-500">FUNDACION SERGIO RESCATA</h1>
+                    <p className=" underline text-xl md:text-2xl mb-8 text-red-500">
                         AYÚDANOS A AYUDAR
                     </p>
-                    <span className="text-xl md:text-2xl mb-8 leading-relaxed">MISIÓN:</span>
+                    <span className="underline text-xl md:text-2xl mb-8 leading-relaxed">MISIÓN:</span>
                     <p className="text-justify md:text-center mt-4 text-xl md:text-2xl mb-8 leading-relaxed">
 
                         Transformamos la vida de quienes desean retornar a la sobriedad, los ayudamos a
@@ -20,8 +20,8 @@ export default function About() {
                         tratamiento de adicciones, con el mayor grado de calidad humana, técnica y científica.
                         Tratamiento integral, multidisciplinario y personalizado de conductas autodestructivas.
                     </p>
-                    <span className="text-xl md:text-2xl mb-8 leading-relaxed">VISIÓN :</span>
-                    <p className="text-xl md:text-2xl mb-8 leading-relaxed">
+                    <span className="underline text-xl md:text-2xl mb-8 leading-relaxed">VISIÓN :</span>
+                    <p className=" text-justify text-xl md:text-2xl mb-8 leading-relaxed">
                         Ser referentes en programas de prevención, rehabilitación, reinserción y transformación
                         social en el tratamiento psicosocial, trabajando para mejorar e incrementar las
                         intervenciones, tanto en la prevención como en la rehabilitación, con el objetivo de lograr
@@ -40,9 +40,9 @@ export default function About() {
                         mutuas. Todo ello procurando la optimización de los recursos tanto humanos como
                         técnicos y sin perder como referencia fundamental el beneficio directo de las personas
                         a las que atendemos orientando así cualquiera de los pasos que demos.    </p>
-                    <div className="text-left">
-                        <h2 className="text-2xl font-semibold mb-2">OBJETIVOS</h2>
-                        <ul className="list-disc pl-5 text-2xl ">
+                    <div className="text-center my-10 max-w-4xl mx-auto">
+                        <h2 className="underline  text-2xl font-semibold mb-2">OBJETIVOS</h2>
+                        <ul className="text-justify list-disc pl-5 text-2xl ">
                             <li>
                                 Crear y gestionar servicios y programas sociales, educativos y socio-sanitarios dirigidos a personas en especial dificultad de adicción, orientados a la mejora de su calidad de vida.
                             </li>
@@ -58,9 +58,9 @@ export default function About() {
                         </ul>
                     </div>
                     <div className="text-center my-10 max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-semibold mb-2">VALORES</h2>
+                        <h2 className=" underline text-2xl font-semibold mb-2">VALORES</h2>
 
-                        <ul className="text-2xl list-disc pl-5">
+                        <ul className=" text-justify text-2xl list-disc pl-5">
                             <li>
                                 La solidaridad como principio rector en el que se asienta cualquiera de nuestras líneas de acción y que orienta las respuestas que en el día a día se nos plantean.
                             </li>
@@ -81,7 +81,7 @@ export default function About() {
                             </li>
                         </ul>
                     </div>
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4 text-red-500">SERGIO RESCATA UNA VIDA A LA VEZ</h1>
+                    <h1 className=" underline text-4xl md:text-6xl font-bold mb-4 text-red-500">SERGIO RESCATA UNA VIDA A LA VEZ</h1>
                 </div>
 
 
