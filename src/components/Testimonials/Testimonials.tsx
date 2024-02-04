@@ -16,7 +16,7 @@ export function Testimonials() {
                 </Reveal>
                 <Reveal>
                     <div className="self-center">
-                        <p className=" rounded-lg px-4 py-4 text-primaryDark bg-gradient-to-r bg-slate-400">
+                        <p className="text-justify rounded-lg px-4 py-4 text-primaryDark bg-gradient-to-r bg-slate-400">
                             Descubre por qué la Fundación Sergio Rescata es reconocida en la ciudad, conoce los testimonios de aquellos a quienes hemos ayudado a transformar sus vidas y superar las dificultades. Tu apoyo es fundamental para seguir haciendo una diferencia significativa en nuestra comunidad.
                         </p>
                     </div>

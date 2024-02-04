@@ -30,14 +30,14 @@ export function Slide() {
                 <SwiperSlide key={id} className="my-10 cursor-pointer md:px-10 bg-slate-400 ">
                     <Reveal>
                         <Image src="/assets/testimonial-icon.png" alt="Testimonial" width={50} height={50} className="w-auto h-auto" />
-                        <div className="my-5">
+                        <div className="my-5 text-justify">
                             {testimonial}
                         </div>
-                        <div className="flex">
+                        <div className="flex ">
                             <Image src={image} alt={name} width="50" height={50} className="mr-5" />
-                            <div>
+                            <div className='text-justify'>
                                 <h4 className="text-center">{name}</h4>
-                                <p className="text-primaryDark">{work}</p>
+                                <p className=" text-justify text-primaryDark">{work}</p>
                             </div>
                         </div>
                     </Reveal>

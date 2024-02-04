@@ -13,7 +13,7 @@ export function CtaDark() {
                             </h3>
                         </Reveal>
                         <Reveal>
-                            <p>
+                            <p className=" text-justify">
                                 Descubre cómo puedes contribuir a la recuperación y transformación
                                 de personas que luchan contra la adicción. Tu apoyo marca la
                                 diferencia.

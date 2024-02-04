@@ -22,7 +22,7 @@ export function BestBusiness() {
             </h2>
           </Reveal>
           <Reveal>
-            <p className="max-w-md mt-10">
+            <p className=" text-justify max-w-md mt-10">
               Las estadísticas son claras: la drogadicción en nuestra ciudad
               está en aumento. Pasamos a tener más de 5.000 habitantes según el último censo de 2021. Detrás de estas cifras, hay
               historias reales de lucha, dolor y esperanza. Nosotros estamos
@@ -51,7 +51,7 @@ export function BestBusiness() {
                   width={40}
                   height={40}
                 />
-                <div>
+                <div className=" text-justify">
                   <h4 className="text-blue-500">{title}</h4>
                   <p className="text-black">{description}</p>
                 </div>

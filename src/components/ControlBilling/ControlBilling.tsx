@@ -30,7 +30,7 @@ export function ControlBilling() {
                                 alt="Video 2"
                                 width={500}
                                 height={500}
-                                className="rounded-md cursor-pointer h-28 w-36"
+                                className="rounded-md cursor-pointer h-full w-full"
                                 priority={true}
                             />
                         </Link>
@@ -44,7 +44,7 @@ export function ControlBilling() {
                         </h2>
                     </Reveal>
                     <Reveal>
-                        <p className="max-w-md mt-10">
+                        <p className=" text-justify max-w-md mt-10">
                             Descubre las conmovedoras experiencias vividas en la fundación y cómo hemos impactado positivamente en la vida de aquellos que han pasado por nuestras puertas.
                         </p>
                     </Reveal>
