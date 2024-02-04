@@ -5,13 +5,13 @@ export default function About() {
         <>
 
             <Reveal>
-                <div className="text-center my-10 max-w-4xl mx-10 md:mx-20  lg:mx-40 xl:mx-64">
+                <div className="text-center my-10 max-w-4xl mx-6 md:mx-20  lg:mx-40 xl:mx-64">
                     <h1 className=" underline text-4xl md:text-6xl font-bold mb-4 text-red-500">FUNDACION SERGIO RESCATA</h1>
                     <p className=" underline text-xl md:text-2xl mb-8 text-red-500">
                         AYÚDANOS A AYUDAR
                     </p>
                     <span className="underline text-xl md:text-2xl mb-8 leading-relaxed">MISIÓN:</span>
-                    <p className="text-justify md:text-center mt-4 text-xl md:text-2xl mb-8 leading-relaxed">
+                    <p className="text-justify  mt-4 text-xl md:text-2xl mb-8 leading-relaxed">
 
                         Transformamos la vida de quienes desean retornar a la sobriedad, los ayudamos a
                         recuperar sus objetivos, metas y sueños. Abordamos las áreas vitales para una

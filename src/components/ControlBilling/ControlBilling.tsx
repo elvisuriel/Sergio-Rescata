@@ -15,8 +15,9 @@ export function ControlBilling() {
                         <Link href="https://www.youtube.com/watch?v=udykun1NawE" passHref>
                             <Image
                                 src="/assets/youtube.jpg"
+                                width={500}
+                                height={500}
                                 alt="Video 1"
-                                layout="fill"
                                 className="rounded-md cursor-pointer h-full w-full"
                                 priority={true}
                             />
@@ -27,7 +28,8 @@ export function ControlBilling() {
                             <Image
                                 src="/assets/youtube.jpg"
                                 alt="Video 2"
-                                layout="fill"
+                                width={500}
+                                height={500}
                                 className="rounded-md cursor-pointer h-28 w-36"
                                 priority={true}
                             />
