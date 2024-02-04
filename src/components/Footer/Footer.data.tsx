@@ -1,6 +1,6 @@
 import { RiFacebookCircleFill, RiInstagramLine, RiLinkedinBoxFill, RiTwitterXFill } from "react-icons/ri";
 import { FaTiktok } from "react-icons/fa";
-
+import { CiYoutube } from "react-icons/ci";
 export const footerData = [
   {
     id: 1,
@@ -95,8 +95,8 @@ export const footerSocialNetworks = [
   },
   {
     id: 3,
-    icon: <RiTwitterXFill />,
-    link: "https://twitter.com/?lang=es"
+    icon: <CiYoutube />,
+    link: "https://m.youtube.com/@SergioRescataCucuta"
   },
   {
     id: 4,
