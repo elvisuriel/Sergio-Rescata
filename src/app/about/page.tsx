@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/Reveal";
+import Link from "next/link";
 
 export default function About() {
     return (
@@ -86,6 +87,19 @@ export default function About() {
 
 
             </Reveal>
+            <div className="text-center my-10 max-w-4xl mx-6 md:mx-20  lg:mx-40 xl:mx-64">
+                {/* ... Otro contenido ... */}
+
+                <Link
+                    href="/SERGIO-RESCATA.pdf"
+                    download="nombre-del-archivo.pdf"
+                    className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300"
+                >
+                    Descargar PDF
+                </Link>
+
+                {/* ... Otro contenido ... */}
+            </div>
 
         </>
     );
