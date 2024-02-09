@@ -58,18 +58,18 @@ export function FirstBlock() {
   };
 
   return (
-    <div className="flex items-center justify-center relative p-4 py-4 md:py-8">
+    <div className="flex items-center justify-center relative  md:py-8">
       <BackgroundRadialRight />
-      <div className="grid max-w-7xl ml-10 md:mx-auto md:grid-cols-2">
-        <div className="mx-10 md:mx-8 my-2 md:my-10 max-w-full">
+      <div className="grid max-w-6xl  md:mx-auto md:grid-cols-2">
+        <div className=" md:mx-8 my-2 md:my-10 ">
           <VisitCounterAndSearchBar onSearch={handleSearch} smallScreen={true} />
           <Reveal>
-            <h1 className=" text-justify text-2xl md:text-4xl font-semibold">
+            <h1 className="mx-4 text-justify text-2xl md:text-4xl font-semibold">
               <span>{highlightText('FUNDACION SERGIO RESCATA')}</span>
             </h1>
           </Reveal>
           <Reveal>
-            <p className=" md:mx-0 text-justify max-w-full md:max-w-md mt-6 md:mt-10 font-semibold text-xl">
+            <p className="mx-8 md:mx-0 text-justify max-w-full md:max-w-md mt-6 md:mt-10 font-semibold text-xl">
               {highlightText(`
                 Transformamos la vida de quienes desean retornar a la sobriedad, los ayudamos a
                 recuperar sus objetivos, metas y sueños. Abordamos las áreas vitales para una
@@ -87,7 +87,7 @@ export function FirstBlock() {
             </div>
           </Reveal>
         </div>
-        <MotionTransition className="mx-10 md:my-10 flex items-center justify-center ">
+        <MotionTransition className="mx-20 md:my-10 flex items-center justify-center ">
           <Slider banners={banners} className=" my-20 h-64 md:h-96 w-full " />
         </MotionTransition>
       </div>
