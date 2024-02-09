@@ -6,10 +6,11 @@ import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 
 interface VisitCounterAndSearchBarProps {
     onSearch: (searchTerm: string) => void;
+    smallScreen: any
 }
 
-export function VisitCounterAndSearchBar({ onSearch }: VisitCounterAndSearchBarProps) {
-    const [visitCount, setVisitCount] = useState(10000);
+export function VisitCounterAndSearchBar({ onSearch, smallScreen }: VisitCounterAndSearchBarProps) {
+    const [visitCount, setVisitCount] = useState(0);
     const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
@@ -26,22 +27,22 @@ export function VisitCounterAndSearchBar({ onSearch }: VisitCounterAndSearchBarP
     };
 
     return (
-        <div className="flex flex-col items-center justify-center my-6">
-            <div className="flex items-center mb-2">
-                <FontAwesomeIcon icon={faThumbsUp} className="text-blue-500 text-2xl mr-2" />
-                <p className="text-lg font-semibold">Contador de Visitas: {visitCount}</p>
+        <div className="flex flex-col items-center">
+            <div className={`text-lg font-semibold mb-2 ${smallScreen ? 'text-sm' : ''}`}>
+                <FontAwesomeIcon icon={faThumbsUp} className="mr-2 text-blue-500" />
+                Contador de Visitas: {visitCount}
             </div>
-            <div className="mx-20  md:mx-2 flex items-center">
+            <div className="flex items-center">
                 <input
                     type="text"
                     value={searchTerm}
                     onChange={(e: ChangeEvent<HTMLInputElement>) => setSearchTerm(e.target.value)}
                     placeholder="Buscar..."
-                    className="p-2 border border-gray-300 rounded-l focus:outline-none"
+                    className={`px-2 py-1 border border-gray-300 rounded ${smallScreen ? 'text-sm' : ''}`}
                 />
                 <button
                     onClick={handleSearch}
-                    className="bg-blue-500 text-white px-4 py-2 rounded-r hover:bg-blue-600 focus:outline-none"
+                    className={`ml-2 px-4 py-1 bg-blue-500 text-white rounded ${smallScreen ? 'text-sm' : ''}`}
                 >
                     Buscar
                 </button>
