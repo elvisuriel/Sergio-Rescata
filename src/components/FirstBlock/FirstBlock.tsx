@@ -61,7 +61,7 @@ export function FirstBlock() {
     <div className="flex items-center justify-center relative p-4 py-4 md:py-8">
       <BackgroundRadialRight />
       <div className="grid max-w-7xl mx-auto md:grid-cols-2">
-        <div className="my-2 md:my-10">
+        <div className="mx-8 my-2 md:my-10">
           <VisitCounterAndSearchBar onSearch={handleSearch} />
           <Reveal>
             <h1 className="text-justify text-4xl font-semibold">

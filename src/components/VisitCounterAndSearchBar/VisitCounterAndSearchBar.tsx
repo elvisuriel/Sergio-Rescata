@@ -31,7 +31,7 @@ export function VisitCounterAndSearchBar({ onSearch }: VisitCounterAndSearchBarP
                 <FontAwesomeIcon icon={faThumbsUp} className="text-blue-500 text-2xl mr-2" />
                 <p className="text-lg font-semibold">Contador de Visitas: {visitCount}</p>
             </div>
-            <div className="flex items-center">
+            <div className="mx-20  md:mx-2 flex items-center">
                 <input
                     type="text"
                     value={searchTerm}
