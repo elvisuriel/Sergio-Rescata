@@ -60,7 +60,7 @@ export function FirstBlock() {
   return (
     <div className="flex items-center justify-center relative p-4 py-4 md:py-8">
       <BackgroundRadialRight />
-      <div className="grid max-w-7xl mx-4 md:mx-auto md:grid-cols-2">
+      <div className="grid max-w-7xl ml-10 md:mx-auto md:grid-cols-2">
         <div className="mx-10 md:mx-8 my-2 md:my-10 max-w-full">
           <VisitCounterAndSearchBar onSearch={handleSearch} smallScreen={true} />
           <Reveal>
