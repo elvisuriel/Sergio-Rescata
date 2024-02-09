@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Providers } from "./providers";
+import { SearchProvider } from "./context/context";
 
 const popinsFont = Poppins({
   weight: ["400", "600", "700"],
@@ -20,9 +21,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={popinsFont.className}>  <Providers>
-        {children}
-      </Providers>
+      <body className={popinsFont.className}>
+
+        <SearchProvider>
+          <Providers>
+            {children}
+          </Providers>
+        </SearchProvider>
       </body>
     </html>
   );
