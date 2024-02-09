@@ -27,7 +27,7 @@ export function VisitCounterAndSearchBar({ onSearch, smallScreen }: VisitCounter
     };
 
     return (
-        <div className="px-10 flex flex-col items-center ">
+        <div className=" flex flex-col items-center ">
             <div className={`text-lg font-semibold mb-2 ${smallScreen ? 'text-sm' : ''}`}>
                 <FontAwesomeIcon icon={faThumbsUp} className="mr-2 text-blue-500" />
                 Contador de Visitas: {visitCount}
