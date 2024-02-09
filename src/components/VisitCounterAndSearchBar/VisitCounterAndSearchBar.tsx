@@ -42,7 +42,7 @@ export function VisitCounterAndSearchBar({ onSearch, smallScreen }: VisitCounter
                 />
                 <button
                     onClick={handleSearch}
-                    className={`ml-2 px-4 py-1 bg-blue-500 text-white rounded ${smallScreen ? 'text-sm' : ''}`}
+                    className={` py-1 bg-blue-500 text-white rounded ${smallScreen ? 'text-sm' : ''}`}
                 >
                     Buscar
                 </button>
