@@ -27,18 +27,18 @@ export function VisitCounterAndSearchBar({ onSearch, smallScreen }: VisitCounter
     };
 
     return (
-        <div className="flex flex-col items-center">
+        <div className="px-10 flex flex-col items-center ">
             <div className={`text-lg font-semibold mb-2 ${smallScreen ? 'text-sm' : ''}`}>
                 <FontAwesomeIcon icon={faThumbsUp} className="mr-2 text-blue-500" />
                 Contador de Visitas: {visitCount}
             </div>
-            <div className="flex items-center">
+            <div className=" flex items-center">
                 <input
                     type="text"
                     value={searchTerm}
                     onChange={(e: ChangeEvent<HTMLInputElement>) => setSearchTerm(e.target.value)}
                     placeholder="Buscar..."
-                    className={`px-2 py-1 border border-gray-300 rounded ${smallScreen ? 'text-sm' : ''}`}
+                    className={`  py-1 border border-gray-300 rounded ${smallScreen ? 'text-sm' : ''}`}
                 />
                 <button
                     onClick={handleSearch}
