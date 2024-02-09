@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { BackgroundRadialRight } from '../BackgroundRadialRight';
-import { MotionTransition } from '../MotionTransition';
 import { Reveal } from '../Reveal';
 import Slider from '../Slider/Slider';
 import { Button } from '@nextui-org/button';
@@ -58,38 +57,39 @@ export function FirstBlock() {
   };
 
   return (
-    <div className="flex items-center justify-center relative p-4 py-4 md:py-8">
+    <div className="flex items-center justify-center relative p-4 py-8 md:py-12">
       <BackgroundRadialRight />
-      <div className="grid max-w-7xl mx-auto md:grid-cols-2">
-        <div className="mx-8 my-2 md:my-10">
-          <VisitCounterAndSearchBar onSearch={handleSearch} />
-          <Reveal>
-            <h1 className="text-justify text-4xl font-semibold">
-              <span>{highlightText('FUNDACION SERGIO RESCATA')}</span>
-            </h1>
-          </Reveal>
-          <Reveal>
-            <p className="mx-4 md:mx-0 text-justify max-w-md mt-10 font-semibold text-xl">
-              {highlightText(`
-                Transformamos la vida de quienes desean retornar a la sobriedad, los ayudamos a
-                recuperar sus objetivos, metas y sueños. Abordamos las áreas vitales para una
-                recuperación completa: espiritual, familiar, psicológica, psiquiátrica y física. Somos una
-                fundación sensible y solidaria, que a través de la experiencia personal, orientamos en el
-                tratamiento de adicciones, con el mayor grado de calidad humana, técnica y científica.
-                Tratamiento integral, multidisciplinario y personalizado de conductas autodestructivas.
-              `)}
-            </p>
-
-            <div className="my-4 flex items-center justify-center">
-              <Link href="/about">
-                <Button color="primary">Ver más</Button>
-              </Link>
-            </div>
-          </Reveal>
-        </div>
-        <MotionTransition className="my-2 md:my-20 flex items-center justify-center h-96">
-          <Slider banners={banners} className="h-64 md:h-96 w-full" />
-        </MotionTransition>
+      <div className="mx-4 md:mx-auto max-w-full">
+        <VisitCounterAndSearchBar onSearch={handleSearch} />
+        <Reveal>
+          <h1 className="mx-4 text-justify text-2xl md:text-4xl font-semibold">
+            <span>{highlightText('FUNDACION SERGIO RESCATA')}</span>
+          </h1>
+        </Reveal>
+        <Reveal>
+          <p className="mx-4 md:mx-0 text-justify max-w-full md:max-w-md mt-6 md:mt-10 font-semibold text-xl">
+            {highlightText(`
+              Transformamos la vida de quienes desean retornar a la sobriedad, los ayudamos a
+              recuperar sus objetivos, metas y sueños. Abordamos las áreas vitales para una
+              recuperación completa: espiritual, familiar, psicológica, psiquiátrica y física. Somos una
+              fundación sensible y solidaria, que a través de la experiencia personal, orientamos en el
+              tratamiento de adicciones, con el mayor grado de calidad humana, técnica y científica.
+              Tratamiento integral, multidisciplinario y personalizado de conductas autodestructivas.
+            `)}
+          </p>
+        </Reveal>
+        <Reveal>
+          <div className="my-4 flex items-center justify-center">
+            <Link href="/about">
+              <Button color="primary">Ver más</Button>
+            </Link>
+          </div>
+        </Reveal>
+        <Reveal>
+          <div className="my-4">
+            <Slider banners={banners} className="mx-4 md:mx-0 h-64 md:h-96 w-full" />
+          </div>
+        </Reveal>
       </div>
     </div>
   );

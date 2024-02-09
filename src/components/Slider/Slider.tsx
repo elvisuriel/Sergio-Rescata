@@ -46,7 +46,7 @@ export function CustomSlider({ banners, className }: CustomSliderProps) {
       >
         {banners.map(({ id, image, alt }: any) => (
           <SwiperSlide key={id}>
-            <div className="h-full w-full ">
+            <div className=" h-full w-full ">
               <div className="relative ">
                 <Image
                   src={image}
