@@ -36,7 +36,7 @@ export function VisitCounterAndSearchBar({
         const visitCountRef = firebase.database().ref('visitCount');
 
         // Incrementa el contador al cargar la página
-        visitCountRef.transaction((count) => (count || 0) + 1);
+        visitCountRef.transaction((count) => (count || 1000) + 1);
 
         // Escucha cambios en el contador y actualiza el estado
         visitCountRef.on('value', (snapshot) => {
