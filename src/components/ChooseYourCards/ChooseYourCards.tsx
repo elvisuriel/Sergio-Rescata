@@ -11,13 +11,13 @@ import Image from "next/image";
 
 export function ChooseYourCards() {
     return (
-        <div className=" bg-blue-200 relative px-6 py-8 md:py-20" id="tarjetas">
+        <div className=" bg-blue-200 relative px-6 py-8 md:py-8" id="tarjetas">
             <BackgroundRadialRight />
             <div className="block max-w-5xl mx-auto md:grid md:grid-cols-2">
                 <Reveal>
-                    <h2 className="text-2xl md:text-5xl font-semibold">
+                    <h2 className="my-10 text-2xl md:text-4xl font-semibold text-blue-500">
                         Contribuye con nosotros
-                        <span className="block degradedBlue bg-blueRadial">
+                        <span className="block text-black ">
                             Tu aporte es la clave para cambiar vidas y construir un futuro mejor.
                         </span>
                     </h2>

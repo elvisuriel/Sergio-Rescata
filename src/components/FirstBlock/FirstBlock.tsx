@@ -61,16 +61,22 @@ export function FirstBlock() {
     <div className="flex items-center justify-center relative  md:py-8">
       <BackgroundRadialRight />
       <div className="grid max-w-7xl  md:mx-auto md:grid-cols-2">
-        <div className=" md:mx-8 my-2 md:my-10 ">
-          <VisitCounterAndSearchBar onSearch={handleSearch} smallScreen={true} />
-          <Reveal>
-            <h1 className="mx-10 text-justify text-xl md:text-4xl font-semibold">
-              <span>{highlightText('FUNDACION SERGIO RESCATA')}</span>
-            </h1>
-          </Reveal>
-          <Reveal>
-            <p className="mx-10 md:mx-0 text-justify max-w-full md:max-w-md mt-6 md:mt-10 font-semibold text-lg">
-              {highlightText(`
+        <div className=" md:mx-8 my-4 md:my-6 ">
+          <div>
+            <VisitCounterAndSearchBar onSearch={handleSearch} smallScreen={true} />
+          </div>
+          <div className='flex items-center justify-center'>
+            <Reveal>
+              <h1 className="my-6 mx-2 md:mx-4 text-xl md:text-3xl font-semibold">
+                <span>{highlightText('FUNDACION SERGIO RESCATA')}</span>
+              </h1>
+            </Reveal>
+          </div>
+
+          <div className='flex items-center justify-center'>
+            <Reveal>
+              <p className="mx-10 md:mx-0  text-justify max-w-full md:max-w-md  font-semibold text-lg">
+                {highlightText(`
                 Transformamos la vida de quienes desean retornar a la sobriedad, los ayudamos a
                 recuperar sus objetivos, metas y sueños. Abordamos las áreas vitales para una
                 recuperación completa: espiritual, familiar, psicológica, psiquiátrica y física. Somos una
@@ -78,17 +84,18 @@ export function FirstBlock() {
                 tratamiento de adicciones, con el mayor grado de calidad humana, técnica y científica.
                 Tratamiento integral, multidisciplinario y personalizado de conductas autodestructivas.
               `)}
-            </p>
+              </p>
 
-            <div className="my-4 flex items-center justify-center">
-              <Link href="/about">
-                <Button color="primary">Ver más</Button>
-              </Link>
-            </div>
-          </Reveal>
+              <div className="my-4 flex items-center justify-center">
+                <Link href="/about">
+                  <Button color="primary">Ver más</Button>
+                </Link>
+              </div>
+            </Reveal>
+          </div>
         </div>
-        <MotionTransition className="mx-10 md:my-10 flex items-center justify-center ">
-          <Slider banners={banners} className=" my-20 h-64 md:h-96 w-full " />
+        <MotionTransition className="mx-10 md:my-4 flex items-center justify-center ">
+          <Slider banners={banners} className=" rounded-lg my-4 h-64 md:h-96 w-full " />
         </MotionTransition>
       </div>
     </div>
