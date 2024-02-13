@@ -32,11 +32,12 @@ export function VisitCounterAndSearchBar({
     const [visitCount, setVisitCount] = useState<number | null>(null);
     const [searchTerm, setSearchTerm] = useState<string>('');
 
+
     useEffect(() => {
         const visitCountRef = firebase.database().ref('visitCount');
 
-        // Incrementa el contador al cargar la página
-        visitCountRef.transaction((count) => (count || 1000) + 1);
+        // Inicializa el contador en 1000 si no existe
+        visitCountRef.set(1000);
 
         // Escucha cambios en el contador y actualiza el estado
         visitCountRef.on('value', (snapshot) => {
