@@ -33,11 +33,20 @@ export function VisitCounterAndSearchBar({
     const [searchTerm, setSearchTerm] = useState<string>('');
 
 
+
     useEffect(() => {
         const visitCountRef = firebase.database().ref('visitCount');
 
-        // Inicializa el contador en 1000 si no existe
-        visitCountRef.set(1000);
+        // Obtén el valor actual del contador
+        visitCountRef.once('value', (snapshot) => {
+            const currentCount = snapshot.val() || 1000;
+
+            // Incrementa el contador en 1 y actualiza la base de datos
+            visitCountRef.set(currentCount + 1);
+
+            // Actualiza el estado local con el nuevo valor del contador
+            setVisitCount(currentCount);
+        });
 
         // Escucha cambios en el contador y actualiza el estado
         visitCountRef.on('value', (snapshot) => {
@@ -50,6 +59,7 @@ export function VisitCounterAndSearchBar({
             visitCountRef.off();
         };
     }, []);
+
 
     const handleSearch = () => {
         onSearch(searchTerm);

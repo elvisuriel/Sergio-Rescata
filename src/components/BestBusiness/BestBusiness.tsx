@@ -34,12 +34,12 @@ export function BestBusiness() {
       <div className="grid max-w-5xl mx-auto md:grid-cols-2">
         <div>
           <Reveal>
-            <h2 className="text-2xl md:text-5xl font-semibold">
-              <span className="block degradedBlue bg-blueRadial">
-                {highlightText('Únete a la Lucha')}
+            <h2 className="mx-10 md:mx-0 text-center md:text-justify text-2xl md:text-4xl font-semibold text-blue-500">
+              <span >
+                Únete a la Lucha
               </span>
-              {highlightText('juntos, podemos construir')} <br />
-              {highlightText('un futuro')}
+              juntos, podemos construir <br />
+              un futuro
             </h2>
           </Reveal>
           <Reveal>
