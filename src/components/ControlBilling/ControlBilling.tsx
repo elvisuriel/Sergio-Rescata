@@ -1,6 +1,7 @@
 "use client"
 import React from 'react';
-
+import Link from "next/link";
+import { Reveal } from '../Reveal';
 export function ControlBilling() {
     return (
         <div className="p-4 py-8 md:py-10">
@@ -29,9 +30,14 @@ export function ControlBilling() {
                     <p className=" text-justify max-w-md mt-10">
                         Descubre las conmovedoras experiencias vividas en la fundación y cómo hemos impactado positivamente en la vida de aquellos que han pasado por nuestras puertas.
                     </p>
-                    <button className="mt-6 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">
-                        Ver Galería
-                    </button>
+
+                    <Reveal>
+                        <Link href="https://collection.cloudinary.com/dybws2ubw/8c560a5d20384e75f6905ea43405cb1b" passHref>
+                            <button className="mt-6 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">
+                                Ver Galería
+                            </button>
+                        </Link>
+                    </Reveal>
                 </div>
             </div>
         </div>
