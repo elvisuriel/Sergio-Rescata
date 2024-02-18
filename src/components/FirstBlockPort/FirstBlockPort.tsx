@@ -6,7 +6,7 @@ import { footerSocialNetworks } from "../Footer/Footer.data";
 const banners = [
   {
     id: 1,
-    image: "/assets/sergio-1.jpg",
+    image: "/assets/sergio-2.jpg",
     alt: "Outware Picks",
     title: "Outware Picks",
     description: "Descripción de la imagen 2...",
