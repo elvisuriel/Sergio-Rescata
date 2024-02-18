@@ -20,7 +20,7 @@ const banners = [
   },
   {
     id: 3,
-    image: "/assets/sergio-2.jpg",
+    image: "/assets/sergio-10.jpg",
     alt: "Best for men",
     title: "Best for men",
     description: "Descripción de la imagen 3...",

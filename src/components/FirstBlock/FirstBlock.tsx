@@ -12,21 +12,21 @@ import { VisitCounterAndSearchBar } from '@/components/VisitCounterAndSearchBar'
 const banners = [
   {
     id: 1,
-    image: '/assets/sergio-3.jpg',
+    image: 'https://res.cloudinary.com/dybws2ubw/image/upload/v1708290369/sergion-6_nof7yc.jpg',
     alt: 'Outware Picks',
     title: 'Outware Picks',
     description: 'Descripción de la imagen 2...',
   },
   {
     id: 2,
-    image: '/assets/sergio-6.jpg',
+    image: 'https://res.cloudinary.com/dybws2ubw/image/upload/v1708289729/sergion-4_ylsczt.jpg',
     alt: 'Seasonal Offers',
     title: 'Seasonal Offers',
     description: 'Descripción de la imagen 2...',
   },
   {
     id: 3,
-    image: '/assets/sergio-9.jpg',
+    image: 'https://res.cloudinary.com/dybws2ubw/image/upload/v1708288888/sergion-5_pghvbh.jpg',
     alt: 'Best for men',
     title: 'Best for men',
     description: 'Descripción de la imagen 3...',
