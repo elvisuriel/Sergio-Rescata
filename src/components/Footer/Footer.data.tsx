@@ -1,35 +1,36 @@
 import { RiFacebookCircleFill, RiInstagramLine, RiLinkedinBoxFill, RiTwitterXFill } from "react-icons/ri";
 import { FaTiktok } from "react-icons/fa";
 import { CiYoutube } from "react-icons/ci";
+
 export const footerData = [
   {
     id: 1,
-    title: "Links útiles",
+    title: "Información",
     links: [
       {
         id: 1,
-        name: "Contenido",
-        link: "#",
+        name: "Acerca de nosotros",
+        link: "/acerca-de",
       },
       {
         id: 2,
-        name: "Como trabajamos",
-        link: "#",
+        name: "Proyectos",
+        link: "/proyectos",
       },
       {
         id: 3,
-        name: "Crear",
-        link: "#",
+        name: "Cómo ayudar",
+        link: "/como-ayudar",
       },
       {
         id: 4,
-        name: "Explorar",
-        link: "#",
+        name: "Noticias",
+        link: "/noticias",
       },
       {
         id: 5,
-        name: "Términos y condiciones",
-        link: "#",
+        name: "Contacto",
+        link: "/contacto",
       },
     ],
   },
@@ -39,44 +40,44 @@ export const footerData = [
     links: [
       {
         id: 1,
-        name: "Centro de ayuda",
-        link: "#",
+        name: "Participa",
+        link: "/participa",
       },
       {
         id: 2,
-        name: "Partners",
-        link: "#",
+        name: "Voluntariado",
+        link: "/voluntariado",
       },
       {
         id: 3,
-        name: "Sugerencias",
-        link: "#",
+        name: "Eventos",
+        link: "/eventos",
       },
       {
         id: 4,
         name: "Blog",
-        link: "#",
+        link: "/blog",
       },
       {
         id: 5,
         name: "Newsletter",
-        link: "#",
+        link: "/newsletter",
       },
     ],
   },
   {
     id: 3,
-    title: "Partner",
+    title: "Colaboradores",
     links: [
       {
         id: 1,
-        name: "Nuestro partner",
-        link: "#",
+        name: "Nuestros colaboradores",
+        link: "/nuestros-colaboradores",
       },
       {
         id: 2,
-        name: "Hazte partner",
-        link: "#",
+        name: "Cómo colaborar",
+        link: "/como-colaborar",
       },
     ],
   },
@@ -86,22 +87,21 @@ export const footerSocialNetworks = [
   {
     id: 1,
     icon: <RiInstagramLine />,
-    link: "https://www.instagram.com/sergiorescata?igsh=dTYzMXhqZmd1cmEx"
+    link: "https://www.instagram.com/sergiorescata?igsh=dTYzMXhqZmd1cmEx",
   },
   {
     id: 2,
     icon: <RiFacebookCircleFill />,
-    link: "https://www.facebook.com/sergiorescata1?mibextid=kFxxJD"
+    link: "https://www.facebook.com/sergiorescata1?mibextid=kFxxJD",
   },
   {
     id: 3,
     icon: <CiYoutube />,
-    link: "https://m.youtube.com/@SergioRescataCucuta"
+    link: "https://m.youtube.com/@SergioRescataCucuta",
   },
   {
     id: 4,
     icon: <FaTiktok />,
-    link: "https://www.tiktok.com/@sergiorescata?_t=8jbNmyiFWoX&_r=1"
+    link: "https://www.tiktok.com/@sergiorescata?_t=8jbNmyiFWoX&_r=1",
   },
-
 ];
