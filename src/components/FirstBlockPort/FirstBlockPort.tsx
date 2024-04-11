@@ -6,21 +6,21 @@ import { footerSocialNetworks } from "../Footer/Footer.data";
 const banners = [
   {
     id: 1,
-    image: "/assets/sergio-2.jpg",
+    image: "https://res.cloudinary.com/dybws2ubw/image/upload/v1712876742/sergiores-1_zvimkk.jpg",
     alt: "Outware Picks",
     title: "Outware Picks",
     description: "Descripción de la imagen 2...",
   },
   {
     id: 2,
-    image: "/assets/sergio-5.jpg",
+    image: "https://res.cloudinary.com/dybws2ubw/image/upload/v1712878982/sergiores-2_qttxav.jpg",
     alt: "Seasonal Offers",
     title: "Seasonal Offers",
     description: "Descripción de la imagen 2...",
   },
   {
     id: 3,
-    image: "/assets/sergio-10.jpg",
+    image: "https://res.cloudinary.com/dybws2ubw/image/upload/v1712878980/sergiores-3_dfi1wn.jpg",
     alt: "Best for men",
     title: "Best for men",
     description: "Descripción de la imagen 3...",
@@ -31,11 +31,11 @@ export function FirstBlockPort() {
   return (
     <div className="relative md:-mt-10 mt-0">
       <div className="">
-        <Slider banners={banners} className="h-[300px] md:h-[600px] w-full" />
+        <Slider banners={banners} className="h-[300px] md:h-[800px] w-full" />
       </div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
-        <Reveal>
-          <h1 className="text-2xl md:text-5xl font-semibold my-4">
+      <div className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
+        <Reveal >
+          <h1 className="text-2xl md:text-5xl font-semibold my-4 bg-black bg-opacity-30 rounded-2xl p-1">
             SERGIO RESCATA
             <span className="block mt-8">AYÚDANOS A</span>
             AYUDAR
